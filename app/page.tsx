@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Map from "@/app/components/Map";
+import Map from "@/app/components/MapRequest";
+
 
 export default function Home() {
   return (
