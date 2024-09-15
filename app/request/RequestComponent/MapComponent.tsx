@@ -64,6 +64,7 @@ const MapComponent: React.FC = () => {
                 options={options}
                 zoom={14}
                 center={defaultTarget}
+                onClick={() => setIsInfoWindowFOpen(false)}
             >
                 {/* Only render the marker if the pinIcon is available */}
                 {/* @ts-ignore */}
