@@ -1,6 +1,6 @@
 import React from 'react'
-import MapComponent from '../request/RequestComponent/MapComponent'
-import TripRequest from '../request/RequestComponent/TripRequest'
+import MapComponent from '../provider/RequestComponent/MapComponent'
+import TripRequest from '../provider/RequestComponent/TripRequest'
 const MapRequest = () => {
     return (
         <div className="flex flex-col align-middle">
