@@ -1,8 +1,8 @@
+import useOnclickOutside from "react-cool-onclickoutside";
 import usePlacesAutocomplete, {
     getGeocode,
     getLatLng,
 } from "use-places-autocomplete";
-import useOnclickOutside from "react-cool-onclickoutside";
 
 export default function PlaceSearchOrigin() {
     const {
@@ -23,13 +23,14 @@ export default function PlaceSearchOrigin() {
         // the searched suggestions by calling this method
         clearSuggestions();
     });
-
+    // @ts-ignore
     const handleInput = (e) => {
         // Update the keyword of the input element
         setValue(e.target.value);
     };
 
     const handleSelect =
+        // @ts-ignore
         ({ description }) =>
             () => {
                 // When the user selects a place, we can replace the keyword without request data from API
